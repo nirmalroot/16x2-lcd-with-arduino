@@ -14,14 +14,14 @@ void loop() {
   Serial.println (analogRead(val));
   
   if (analogRead(val)<294){
+  lcd.clear();
   lcd.print(msg1);
   delay(500);
   }  
   else{
+  lcd.clear();
   lcd.print(msg);
   delay(500);
   }
-  
-    lcd.clear();
     delay(600);
 }
